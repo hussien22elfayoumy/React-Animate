@@ -66,11 +66,10 @@ export default function NewChallenge({ onDone }) {
           {images.map((image) => (
             <motion.li
               variants={{
-                hidden: { opacity: 0, scale: 0.7 },
+                hidden: { opacity: 0, scale: 0.5 },
                 visible: {
                   opacity: 1,
-                  scale: 1,
-                  transition: { type: 'spring' }, // Add the transition here
+                  scale: [0.8, 1.15, 1],
                 },
               }}
               key={image.alt}
